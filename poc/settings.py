@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ij%hp3v8+o8dn433&7_a+*ttgjt8g0*ejsi$#auuk=*c7plya8'
+SECRET_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 CELERY_accept_content = ['application/json']
 CELERY_task_serializer = 'json'
 CELERY_TASK_DEFAULT_QUEUE = 'poc-ans-sqs'
-CELERY_BROKER_URL = "sqs://%s:%s@" % ('XXXXXXXXXXXXX', 'XXXXXXXXXXXXXXXXXXXXXXXXX')
+CELERY_BROKER_URL = "sqs://%s:%s@" % ('XXXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx')
 CELERY_BROKER_TRANSPORT_OPTIONS = {
     "region": "ap-southeast-1",
     # 'queue_name_prefix': 'django-',
